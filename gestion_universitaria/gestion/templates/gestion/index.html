@@ -1,0 +1,62 @@
+<!-- templates/gestion/index.html -->
+{% comment %} {% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Sistema de Gestión Universitaria</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Sistema de Gestión Universitaria para Ciencias Sociales</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'listar_estudiantes' %}">Estudiantes</a></li>
+                <li><a href="{% url 'listar_carreras' %}">Carreras</a></li>
+                <li><a href="{% url 'listar_profesores' %}">Profesores</a></li>
+                <li><a href="{% url 'inscribir_estudiante' %}">Inscripción a Carreras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Sistema de Gestión Universitaria</p>
+    </footer>
+</body>
+</html> {% endcomment %}
+
+
+<!-- templates/gestion/index.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Sistema de Gestión Universitaria</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Sistema de Gestión Universitaria para Ciencias Sociales</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'listar_estudiantes' %}">Estudiantes</a></li>
+                <li><a href="{% url 'listar_carreras' %}">Carreras</a></li>
+                <li><a href="{% url 'listar_profesores' %}">Profesores</a></li>
+                <li><a href="{% url 'inscribir_estudiante' %}">Inscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Aquí puedes agregar más contenido si lo deseas -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Sistema de Gestión Universitaria</p>
+    </footer>
+</body>
+</html>

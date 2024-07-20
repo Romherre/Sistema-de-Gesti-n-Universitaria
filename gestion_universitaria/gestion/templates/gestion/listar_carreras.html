@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Carreras</title>
+</head>
+<body>
+    <h1>Lista de Carreras</h1>
+    <ul>
+        {% for carrera in carreras %}
+        <li>{{ carrera.nombre }}: {{ carrera.descripcion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

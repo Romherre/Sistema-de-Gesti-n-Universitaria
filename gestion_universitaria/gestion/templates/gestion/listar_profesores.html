@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Profesores</title>
+</head>
+<body>
+    <h1>Lista de Profesores</h1>
+    <ul>
+        {% for profesor in profesores %}
+        <li>{{ profesor.nombre }} {{ profesor.apellido }} - {{ profesor.email }} ({{ profesor.carrera.nombre }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
